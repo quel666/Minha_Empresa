@@ -1,0 +1,72 @@
+.pai-dos-lados {
+    display: flex;
+    gap: 30px;
+    padding-bottom: 20px;
+}
+
+.pai-dos-lados div {
+    width: 50%;
+}
+.pai-dos-lados .lado-direito img {
+    width: 100%;
+}
+
+.pai-dos-lados .lado-esquerdo p {
+    text-align: justify;
+}
+.pai-dos-lados .lado-esquerdo{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.pai-dos-lados .lado-esquerdo h1, .newsletter h2{
+    text-transform: uppercase;
+    background-color: blueviolet;
+}
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.newsletter .paragrafo {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-bottom: 30px;
+}
+
+.newsletter form input {
+    padding: 10px 6px;
+}
+
+.btn {
+    width: 250px;
+    border: 2px black solid ;
+    border-radius: 4px;
+    background-color: black;
+    padding: 10px 20px;
+    color: rgb(255, 255, 255) ;
+    box-shadow: #333 3px 3px 0px;
+    cursor: pointer;
+    text-align: center;
+}
+
+@media screen and (max-width: 780px) {
+    .newsletter form {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 733px) { 
+    .pai-dos-lados {
+        flex-direction: column-reverse;
+    }     
+    .pai-dos-lados div {
+        width: 100%;
+    }
+}
